@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <bool name="default_general_reschedule_problems">true</bool>
+    <bool name="default_general_reschedule_problems">false</bool>
     <bool name="default_general_level_modulation">false</bool>
     <string name="default_general_decimal_places_answer">1</string >
     
