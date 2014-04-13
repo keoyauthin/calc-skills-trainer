@@ -524,17 +524,9 @@ implements OnClickListener
 					int pos,
 					long id) 
 			{
-				Spinner spinner = (Spinner) findViewById(R.id.problem_level_spinner);
-				ViewParent viewParent = spinner.getParent();
-				
-				// Workaround to restrain Android from calling this method 
-				// automatically in an unwanted context
-				if (parent.equals(viewParent))
-				{
-					ctrl.clearProblemQueue();
-					ctrl.setCurrentLevel(pos + 1);
-					ctrl.nextProblem();
-				}
+				ctrl.clearProblemQueue();
+				ctrl.setCurrentLevel(pos + 1);
+				ctrl.nextProblem();
 			}
 
 			@Override
