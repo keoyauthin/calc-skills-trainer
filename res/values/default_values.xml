@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="default_general_reschedule_problems">true</bool>
+    <bool name="default_general_level_modulation">false</bool>
+    <string name="default_general_decimal_places_answer">1</string >
+    
+    <string name="default_addition_level">1</string>
+    <string name="default_subtraction_level">1</string>
+    <string name="default_multiplication_level">1</string>
+    <string name="default_division_level">1</string>
+
+</resources>

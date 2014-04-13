@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/problem_layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="1dp"
+    android:paddingBottom="1dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp" >
+    
+    <!-- ITEMS AT THE TOP -->
+    
+    <Spinner
+        android:id="@+id/problem_type_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true" />
+    
+    <Spinner 
+        android:id="@+id/problem_level_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentTop="true" 
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/problem_level_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/problem_level_spinner"
+        android:layout_alignTop="@id/problem_level_spinner"
+        android:layout_alignBottom="@id/problem_level_spinner"
+        android:gravity="center"
+        android:paddingRight="5dp"
+        android:text="@string/lbl_level"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <!-- PROBLEM TEXT AND INPUT FIELD -->
+    
+    <EditText
+        android:id="@+id/problem_input_answer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberSigned|numberDecimal" 
+        android:editable="false"
+        android:layout_above="@+id/problem_layout_grid">
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:id="@+id/problem_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/problem_type_spinner"
+        android:layout_above="@id/problem_input_answer"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="{problem_text}"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <!-- GRID WITH CUSTOM NUMBER PAD -->
+    
+    <TableLayout
+        android:id="@id/problem_layout_grid"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:stretchColumns="*"
+		android:layout_marginTop="4dp"
+		android:layout_marginBottom="4dp"
+		
+		android:layout_above="@+id/problem_layout_bottom"> 
+        <TableRow >
+            <Button 
+                android:id="@+id/problem_button_one"
+                android:text="1"
+                android:onClick="onNumberPadAction"/>
+            <Button 
+                android:id="@+id/problem_button_two"
+                android:text="2"
+                android:onClick="onNumberPadAction"/>
+            <Button 
+                android:id="@+id/problem_button_three"
+                android:text="3"
+                android:onClick="onNumberPadAction"/>                        
+        </TableRow>
+        <TableRow >
+            <Button 
+                android:id="@+id/problem_button_four"
+                android:text="4"
+                android:onClick="onNumberPadAction"/>
+            <Button 
+                android:id="@+id/problem_button_five"
+                android:text="5"
+                android:onClick="onNumberPadAction"/>
+            <Button 
+                android:id="@+id/problem_button_six"
+                android:text="6"
+                android:onClick="onNumberPadAction"/>                        
+        </TableRow>        
+        <TableRow >
+            <Button 
+                android:id="@+id/problem_button_seven"
+                android:text="7"
+                android:onClick="onNumberPadAction"/>
+            <Button 
+                android:id="@+id/problem_button_eight"
+                android:text="8"
+                android:onClick="onNumberPadAction"/>
+            <Button 
+                android:id="@+id/problem_button_nine"
+                android:text="9"
+                android:onClick="onNumberPadAction"/>                        
+        </TableRow>        
+        <TableRow >
+            <Button 
+                android:id="@+id/problem_button_minus"
+                android:text="-"
+                android:onClick="onNumberPadAction"/>
+            <Button 
+                android:id="@+id/problem_button_zero"
+                android:text="0"
+                android:onClick="onNumberPadAction"/>
+            <Button 
+                android:id="@+id/problem_button_point"
+                android:text="@string/decimal_point"
+                android:onClick="onNumberPadAction"/>                        
+        </TableRow>        
+    </TableLayout>
+
+    <!-- BUTTONS AT THE BOTTOM -->
+    
+    <LinearLayout
+        android:id="@id/problem_layout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentBottom="true" >
+        
+        <ImageButton
+            android:id="@+id/problem_button_backspace"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="@+id/problem_button_submit"
+			android:src="@drawable/ic_arrow"
+            android:onClick="onNumberPadAction"/>
+        <Button
+	        android:id="@id/problem_button_submit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/btn_okay" 
+	        android:onClick="onClick"/>
+    </LinearLayout>
+
+
+    
+</RelativeLayout>

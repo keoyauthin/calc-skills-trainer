@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory 
+        android:title="@string/pref_general">
+	    <CheckBoxPreference
+	        android:key="general_reschedule_problems"
+	        android:title="@string/pref_general_reschedule_problems_title"
+	        android:summary="@string/pref_general_reschedule_problems_summary"
+	        android:defaultValue="@bool/default_general_reschedule_problems"/>
+        <CheckBoxPreference
+	        android:key="general_level_modulation"
+	        android:title="@string/pref_general_level_modulation_title"
+	        android:summary="@string/pref_general_level_modulation_summary"
+	        android:defaultValue="@bool/default_general_level_modulation"/>
+	    <EditTextPreference 
+	        android:key="general_decimal_places_answer"
+	        android:inputType="number"
+	        android:title="@string/pref_general_decimal_places_answer_title"
+	        android:summary="@string/pref_general_decimal_places_answer_summary"
+	        android:defaultValue="@string/default_general_decimal_places_answer"/>
+    </PreferenceCategory>
+</PreferenceScreen>

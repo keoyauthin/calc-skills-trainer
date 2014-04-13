@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- APPLICATION -->
+    
+    <string name="app_name">Kopfrechentrainer</string>
+    
+    <string name="CSV_Export">CSV exportieren</string>
+    <string name="btn_help">Hilfe</string>
+    <string name="lbl_level">Level: </string>
+    <string name="btn_okay">OK</string>
+    <string name="btn_reset">Zurücksetzen</string>
+    
+    <string name="addition">Addition</string>
+    <string name="subtraction">Subtraktion</string>
+    <string name="multiplication">Multiplikation</string>
+    <string name="division">Division</string>
+    
+    <string name="statistic_export_csv_header">Datum;Aufgaben;Level;Richtig</string>
+    
+    <string name="decimal_point">,</string>
+    
+    <!-- MAIN MENU -->
+    
+    <string name="menu_statistic">Statistik</string>
+    <string name="menu_config">Einstellungen</string>
+    <string name="menu_help">Hilfe</string>
+    
+    <!-- DIALOGS -->
+    
+    <string name="dialog_right_answer">Richtige Antwort</string>
+    <string name="dialog_wrong_answer">Falsche Antwort</string>
+    <string name="dialog_success_export">Die Statistik wurde in den externen Speicher exportiert.</string>
+    <string name="dialog_error_export">Die Statistik konnte nicht in den externen Speicher exportiert werden.</string>
+    <string name="dialog_error_storage">Es kann nicht auf den externen Speicher zugegriffen werden.</string>
+    
+    <string name="dialog_confirm">Bestätigung</string>
+    <string name="dialog_confirm_reset_statistic">Wollen Sie wirklich die Statistik für den aktuellen Aufgabentyp zurücksetzen?</string>
+    
+    <string name="dialog_yes">Ja</string>
+    <string name="dialog_no">Nein</string>
+    
+    <string name="dialog_error_invalid_number">Bitte geben Sie eine gültige Zahl ein.</string>
+    
+    <!-- PREFERENCES -->
+    
+    <string name="pref_general">Einstellungen</string>
+    <string name="pref_addition">Einstellungen Addition</string>
+    <string name="pref_subtraction">Einstellungen Subtraktion</string>
+    <string name="pref_multiplication">Einstellungen Multiplikation</string>
+    <string name="pref_division">Einstellungen Division</string>
+    
+    <string name="pref_level_title">Level</string>
+    <string name="pref_level_summary">Schwierigkeitsgrad</string>
+
+    <string name="pref_general_reschedule_problems_title">Aufgaben wiederholen</string>
+    <string name="pref_general_reschedule_problems_summary">Bei falschen Antworten Aufgabe später nocheinmal wiederholen</string>
+
+    <string name="pref_general_level_modulation_title">Levelanpassung</string>
+    <string name="pref_general_level_modulation_summary">Automatisch Schwierigkeitsgrad bei falschen/richtigen Antworten erniedrigen/erhöhen</string> 
+
+    <string name="pref_general_decimal_places_answer_title">Nachkommastellen Ergebnis</string>
+    <string name="pref_general_decimal_places_answer_summary">Anzahl der Nachkommastellen für das berechnete Ergebnis</string>
+    
+    
+    <!-- STATISTIC VIEW -->
+    
+    <string name="stats_date">Datum</string>
+    <string name="stats_tasks">Aufgaben</string>
+    <string name="stats_level">ø Level</string>
+    <string name="stats_right">Richtig</string>
+    
+
+</resources>

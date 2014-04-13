@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:key="settings_subtraction"
+        android:title="@string/pref_subtraction">
+        <ListPreference
+	        android:key="subtraction_level"
+	        android:title="@string/pref_level_title"
+	        android:summary="@string/pref_level_summary"
+	        android:entries="@array/problem_levels"
+	        android:entryValues="@array/problem_levels"
+	        android:defaultValue="@string/default_subtraction_level" />
+    </PreferenceCategory>
+</PreferenceScreen>

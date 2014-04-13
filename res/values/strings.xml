@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- APPLICATION -->
+    
+    <string name="app_name">Calc Skills Trainer</string>
+    
+    <string name="CSV_Export">Export CSV</string>
+    <string name="btn_help">Help</string>
+    <string name="lbl_level">Level: </string>
+    <string name="btn_okay">OK</string>
+    <string name="btn_reset">Reset</string>
+    
+    <string name="addition">Addition</string>
+    <string name="subtraction">Subtraction</string>
+    <string name="multiplication">Multiplication</string>
+    <string name="division">Division</string>
+    
+    <string name="decimal_point">.</string>
+ 
+
+    <!-- MENU -->
+    
+    <string name="menu_config">Settings</string>
+    <string name="menu_statistic">Statistic</string>
+    <string name="menu_help">Help</string>
+    
+    <!-- DIALOGS -->
+    
+    <string name="dialog_right_answer">Rigth answer</string>
+    <string name="dialog_wrong_answer">Wrong answer</string>
+    <string name="dialog_success_export">The statistic has been exported to the external storage.</string>
+    <string name="dialog_error_export">The statistic couldn\'t be exported to the external storage.</string>    
+    <string name="dialog_error_storage">App cannot access external storage.</string>
+    
+    <string name="dialog_confirm">Confirmation</string>
+    <string name="dialog_confirm_reset_statistic">Do you really want to reset the statistic for the current problem type?</string>
+
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+    
+    <string name="dialog_error_invalid_number">Please type in a valid number.</string>
+
+    <!-- PREFERENCES -->
+    
+    <string name="pref_general">Settings</string>
+    <string name="pref_addition">Settings addition</string>
+    <string name="pref_subtraction">Settings subtraction</string>
+    <string name="pref_multiplication">Settings multiplication</string>
+    <string name="pref_division">Settings division</string>
+    
+    <string name="pref_level_title">Level</string>
+    <string name="pref_level_summary">Level of difficulty</string>
+
+    <string name="pref_general_reschedule_problems_title">Reschedule problems</string>
+    <string name="pref_general_reschedule_problems_summary">Repeat problems after a wrong answer</string>
+    
+    <string name="pref_general_level_modulation_title">Level modulation</string>
+    <string name="pref_general_level_modulation_summary">Increase/decrease level after right/wrong answers automatically</string> 
+
+    <string name="pref_general_decimal_places_answer_title">Decimal places answer</string>
+    <string name="pref_general_decimal_places_answer_summary">Number of decimal places for the calculated result</string>
+    
+    
+    <!-- STATISTIC VIEW -->
+    
+    <string name="stats_date">Date</string>
+    <string name="stats_tasks">Tasks</string>
+    <string name="stats_level">ø Level</string>
+    <string name="stats_right">Right</string>
+    
+    
+    <!-- HELP VIEW -->
+    
+    <string name="help_addition">
+        <![CDATA[
+<h1>Addition</h1>
+
+Die Addition im Kopf wird einfacher, wenn man gedanklich vorstellt, dass die Ziffern in zweier oder dreier
+Gruppen sortiert sind. Somit werden die zu addierenden Zahlen einfacher. Im nächsten Schritt wird dann
+der Übertrag zu dem vorhergenden Teil dazugezählt.
+
+<p>
+<table border="0">
+<tr>
+	<td>8743 + 9082</td>
+	<td>= 87|43 + 90|82</td>
+</tr>
+<tr>
+	<td></td>
+	<td>= 177|125</td>
+</tr>
+<tr>
+	<td></td>
+	<td>= 178|25</td>
+</tr>
+<tr>
+	<td></td>
+	<td>= 17825</td>
+</tr>
+</table
+</p>
+<br/>(vgl. Doerfler, S. 10)
+
+
+<p>Doerfler, Ronald W.: Dead Reckoning - Calculation without instruments. Gulf Publishing. Houston 1993. ISBN 0-88415-087-9</p>
+
+        ]]>
+    </string>
+    
+    <string name="help_subtraction">
+        <![CDATA[
+<h1>Subtraktion</h1>
+
+<p>
+Mit Hilfe von Äquivalenzumformungen kann man sich die Zahlen bei der Subtraktion 
+vereinfachen. Der Minuend kann z.B. so weit verkleinert werden, dass er eine
+Runde Zahl ergibt und diese Differenz wird dann zum Schluss noch zum Ergebnis
+dazu addiert.
+</p>
+
+<p>
+<table border="0">
+<tr>
+	<td>2913 - 578</td>
+	<td>= 2913 - 600 + 22</td>
+</tr>
+<tr>
+	<td></td>
+	<td>= 2313 + 22</td>
+</tr>
+<tr>
+	<td></td>
+	<td>= 2335</td>
+</tr>
+</table
+</p>
+<br/>(vgl. Doerfler, S. 10)
+
+<p>Doerfler, Ronald W.: Dead Reckoning - Calculation without instruments. Gulf Publishing. Houston 1993. ISBN 0-88415-087-9</p>
+
+
+        ]]>
+    </string>
+    
+    <string name="help_multiplication">
+        <![CDATA[
+<h1>Multiplikation</h1>
+
+<p>Vorraussetzung für die gedankliche Multiplikation ist, dass man das kleine
+1x1 auswendig gelernt hat.</p>
+
+<p>Eine Möglichkeit für die Berechnung ist dann die Anwendung des <b>Distributivgesetz</b>.
+Die Faktoren werden in ihre Bestandteile zerlegt, miteinander multipliziert und die
+Teilergebnisse addiert.</p>
+
+<p>
+<table border="0">
+<tr>
+	<td>83 * 25</td>
+	<td> = 80 * 20 + 80 * 5 + 3 * 20 + 3 * 5</td>
+</tr>
+<tr>
+	<td></td>
+	<td> = 1600 + 400 + 60 + 15</td>
+</tr>
+<tr>
+	<td></td>
+	<td> = 2075</td>
+</tr>
+</table
+</p>
+<br/>(vgl. Doerfler, S. 11)
+
+<p>Doerfler, Ronald W.: Dead Reckoning - Calculation without instruments. Gulf Publishing. Houston 1993. ISBN 0-88415-087-9</p>
+      
+        ]]>
+    </string>
+    
+    <string name="help_division">
+        <![CDATA[
+<h1>Division</h1>
+
+<p>Vorraussetzung für die gedankliche Division ist, dass man das kleine
+1x1 auswendig gelernt hat.</p>
+
+<p>
+<br>1. Wie oft passt der Divisor in die erste in Frage kommende Zifferngruppe? (i.d.R. die ersten ein, zwei Ziffern)</li>
+<br>2. Den Rest zwischen dem größtmöglichen Teiler und der Zifferngruppe berechnen.</li>
+<br>3. Wie oft der Divisor in die Zifferngruppe passt, wird als Ziffer ins Ergebnis geschrieben.</li>
+<br>4. Die nächste Ziffer aus dem Dividenten zu dem Rest dazuschreiben.</li>
+<br>5. Schritte 2 bis 4 solange wiederholen bis alle Ziffern aufgebraucht sind</li>
+<br>6. Dann eine imaginäre Null zu dem Rest hinzufügen.</li>
+<br>7. Komma zu Ergebnis hinzufügen.</li>
+<br>8. Je nach Ergebnis der letzten Berechnung die letzte Ziffer runden.</li>
+</p>
+
+<p><img src="division_example_1.png" alt="division_example_1.png"/></p>
+<p><img src="division_example_2.png" alt="division_example_2.png"/></p>
+    
+        ]]>
+    </string>
+
+</resources>
