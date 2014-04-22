@@ -389,7 +389,7 @@ implements OnClickListener
 	
 	private Double getLogicalNumber(String answerString)
 	{
-		if (answerString.isEmpty() || answerString.equals("-"))
+		if (answerString.length() == 0 || answerString.equals("-"))
 		{
 			return null;
 		}
@@ -410,7 +410,7 @@ implements OnClickListener
 	{
 		String result = null;
 		
-		if (answerString.isEmpty() || answerString.equals("-") || answerString.equals(".") || answerString.equals("-."))
+		if (answerString.length() == 0 || answerString.equals("-") || answerString.equals(".") || answerString.equals("-."))
 		{
 			return answerString;
 		}
